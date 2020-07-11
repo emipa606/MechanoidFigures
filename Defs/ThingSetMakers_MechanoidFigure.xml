@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingSetMakerDef>
+    <defName>DebugMechanoidFigures</defName>
+    <root Class="ThingSetMaker_Sum">
+      <options>
+        <li>
+          <chance>1</chance>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>MechanoidFigureMukade</li>
+                  <li>MechanoidFigureKamakiri</li>
+                  <li>MechanoidFigureLancer</li>
+                </thingDefs>
+              </filter>
+              <countRange>
+                <min>32</min>
+                <max>32</max>
+              </countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+      </options>
+    </root>
+  </ThingSetMakerDef>
+</Defs>

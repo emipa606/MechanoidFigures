@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" Name="MechanoidFigureBase" Abstract="True">
+    <thingClass>MechanoidFigures.Building_MechanoidFigure</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <useHitPoints>true</useHitPoints>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>1.10</SellPriceFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>MechanoidFigures.CompMechanoidFigureQuality</compClass>
+      </li>
+      <li Class="MechanoidFigures.CompProperties_MechanoidFigure">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef Class="MechanoidFigures.ThingDef_MechanoidFigure" ParentName="MechanoidFigureBase">
+    <defName>MechanoidFigureMukade</defName>
+    <label>centipede figure</label>
+    <description>This character figure that made by "Mania Corporation" is very popular with some mania. But it's maker was bankrupt long time ago, so this is rare on the market.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Mukade</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.35</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>
+        <!-- 3 -->1</Mass>
+      <Beauty>50</Beauty>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>2200</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <!-- <tradeability>All</tradeability> -->
+    <techLevel>Industrial</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <soundDestroy>Pawn_Mech_Centipede_Death</soundDestroy>
+  </ThingDef>
+  <ThingDef Class="MechanoidFigures.ThingDef_MechanoidFigure" ParentName="MechanoidFigureBase">
+    <defName>MechanoidFigureKamakiri</defName>
+    <label>scyther figure</label>
+    <description>This character figure that made by "Mania Corporation" is very popular with some mania. But it's maker was bankrupt long time ago, so this is rare on the market.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Kamakiri</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.35</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>
+        <!-- 3 -->1</Mass>
+      <Beauty>50</Beauty>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>2200</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <Plasteel>5</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <!-- <tradeability>All</tradeability> -->
+    <techLevel>Industrial</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <soundDestroy>Pawn_Mech_Scyther_Death</soundDestroy>
+  </ThingDef>
+  <ThingDef Class="MechanoidFigures.ThingDef_MechanoidFigure" ParentName="MechanoidFigureBase">
+    <defName>MechanoidFigureLancer</defName>
+    <label>lancers figure</label>
+    <description>This character figure that made by "Mania Corporation" is very popular with some mania. But it's maker was bankrupt long time ago, so this is rare on the market.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Lancer</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <fillPercent>0.35</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>
+        <!-- 3 -->1</Mass>
+      <Beauty>50</Beauty>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>2200</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <Plasteel>5</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <!-- <tradeability>All</tradeability> -->
+    <techLevel>Industrial</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <soundDestroy>Pawn_Mech_Scyther_Death</soundDestroy>
+  </ThingDef>
+</Defs>
